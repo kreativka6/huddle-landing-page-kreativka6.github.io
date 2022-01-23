@@ -1,0 +1,157 @@
+:root{
+
+--clr-violet: hsl(257, 40%, 49%);
+--clr-magenta: hsl(300, 69%, 71%);
+--clr-white: rgb(242, 247, 244);
+--clr-black: rgb(38, 39, 38);
+
+--ff-poppins: 'Poppins', sans-serif;
+--fw-400: 400;
+--fw-600:600;
+
+--ff-sans: 'Open Sans', sans-serif;;
+}
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    
+}
+
+#page{
+    background-color: var(--clr-violet);
+    background-image: url(images/bg-desktop.svg);
+    background-size: cover;
+    color: var(--clr-white);
+    font-family: var(--ff-sans);
+}
+
+.logo{
+    height: 120px;
+    padding: 2%;
+}
+
+header img{
+    width: 100%;
+}
+
+.content{
+    padding: 4%;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text{
+    width: 60%;
+    padding: 5%;
+    font-weight: var(--fw-400);
+    font-family: var(--ff-sans);
+    line-height: 1.4rem;
+    
+}
+
+.text p{
+    margin-bottom: 1rem;
+    padding: 5%;
+}
+
+.text > h1{
+    line-height: 2.8rem;
+    margin-bottom: 1rem;
+    font-weight: var(--fw-600);
+    font-family: var(--ff-poppins);
+    font-size: 2rem;
+    padding: 5%;
+}
+
+.text button{
+    width: 40%;
+    padding: .5rem;
+    text-align: center;
+    background: var(--clr-white);
+    color: var(--clr-black);
+    border: none;
+    border-radius: 25px;
+    font-weight: var(--fw-400);
+    font-family: var(--ff-sans);
+    font-size: 1rem;
+    margin-left: 5%;
+}
+
+.text button:hover{
+    background: var(--clr-magenta);
+    cursor: pointer;
+}
+
+footer{
+    padding: 1%;
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.ion{
+    padding: .5%;
+    border-radius: 50%;
+    border: 1px solid var(--clr-white);
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.ion a{
+    text-decoration: none;
+    color: var(--clr-white);
+}
+
+.ion:hover, .ion a:hover{
+    cursor: pointer;
+    color: var(--clr-magenta);
+    border: 1px solid var(--clr-magenta);
+}
+
+@media (max-width: 680px){
+    #page{
+        background-image: url(images/bg-mobile.svg);
+    }
+    .content{
+        flex-direction: column;
+        text-align: center;
+    }
+    .text{
+        width: 100%;
+        padding: 1%;
+        text-align: center;
+        margin: 60px 0;
+}
+     .text button{
+         width: 45%;
+         margin: 10px 0;
+     }
+
+     .text > h1{
+        margin: 20px 0; 
+        padding: 0;
+     }
+     .text p{
+         padding: 0;
+     }
+     footer{
+         justify-content: center;
+     }
+}
+
+
+
+  .attribution { 
+      width: 100%;
+      margin: 0 auto;
+      font-size: 11px; 
+      text-align: center; 
+    }
+  .attribution a { 
+      color: hsl(228, 45%, 44%); 
+    }
